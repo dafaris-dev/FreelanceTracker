@@ -682,7 +682,7 @@ p { margin: 0 0 1em; color: var(--ink-2); }
   padding: 56px 0 32px;
 }
 .footer__grid {
-  display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 32px;
+  display: grid; grid-template-columns: 1.6fr 1fr; gap: 48px;
   padding-bottom: 32px; border-bottom: 1px solid var(--line);
 }
 .footer__brand p { color: var(--ink-2); margin-top: 10px; max-width: 340px; }
