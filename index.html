@@ -4,17 +4,22 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ValueSheets — Freelancer Tracker</title>
-  <meta name="description" content="Organize your freelance business with ValueSheets Freelancer Tracker — a complete 21-sheet Excel system with 5,163 formulas, 6 live charts, and zero manual math." />
-  <meta property="og:title" content="ValueSheets | Freelancer Tracker for Freelancers" />
-  <meta property="og:description" content="A complete 21-sheet Excel system for freelancers. Clients, invoices, income, tax, time, and a live dashboard — all auto-linked." />
+  <meta name="description" content="The one Excel system freelancers actually use. Track clients, invoices, income, tax & time in 21 auto-linked sheets. One-time payment, yours forever." />
+  <meta property="og:title" content="Freelancer Tracker by ValueSheets" />
+  <meta property="og:description" content="The one Excel system freelancers actually use. 21 auto-linked sheets. One-time payment, yours forever." />
   <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
   <link rel="icon" href="assets/valuesheets-logo.jpg" />
 </head>
 <body>
+
+<!-- ============================= TOP BANNER ============================= -->
+<div class="banner">
+  <span>🎉 One-time payment · Instant download · No subscription, ever.</span>
+</div>
 
 <!-- ============================= NAVIGATION ============================= -->
 <header class="nav" id="nav">
@@ -24,27 +29,25 @@
     </a>
 
     <nav class="nav__links" aria-label="Primary">
-      <a href="#features">Features</a>
-      <a href="#system">21-Sheet System</a>
-      <a href="#how">How It Works</a>
-      <a href="#preview">Product Preview</a>
+      <a href="#whats-inside">What's Inside</a>
+      <a href="#preview">Preview</a>
+      <a href="#price">Price</a>
       <a href="#faq">FAQ</a>
     </nav>
 
     <div class="nav__cta">
-      <a class="btn btn--primary btn--sm js-buy" href="#" target="_blank" rel="noopener">Buy Now</a>
+      <a class="btn btn--primary btn--sm js-buy" href="#" target="_blank" rel="noopener">Buy Now →</a>
       <button class="nav__menu" id="navMenu" aria-label="Open menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
   <div class="nav__drawer" id="navDrawer" hidden>
-    <a href="#features">Features</a>
-    <a href="#system">21-Sheet System</a>
-    <a href="#how">How It Works</a>
-    <a href="#preview">Product Preview</a>
+    <a href="#whats-inside">What's Inside</a>
+    <a href="#preview">Preview</a>
+    <a href="#price">Price</a>
     <a href="#faq">FAQ</a>
-    <a class="btn btn--primary js-buy" href="#" target="_blank" rel="noopener">Buy Now</a>
+    <a class="btn btn--primary js-buy" href="#" target="_blank" rel="noopener">Buy Now →</a>
   </div>
 </header>
 
@@ -52,335 +55,52 @@
 
 <!-- ============================= HERO ============================= -->
 <section class="hero">
-  <div class="container hero__grid">
+  <div class="container hero__wrap">
     <div class="hero__copy reveal">
-      <span class="eyebrow">VALUESHEETS</span>
+      <div class="hero__badge">
+        <span class="dot-pulse"></span> Built by a freelancer, for freelancers
+      </div>
       <h1 class="hero__title">
-        Run Your Freelance Business Without the Spreadsheet Chaos.
+        Finally — stop guessing where your <span class="hl">freelance money</span> is going.
       </h1>
       <p class="hero__sub">
-        Freelancer Tracker is a complete 21-sheet Excel system — clients, invoices, income, tax, time &amp; a live dashboard — all auto-linked. Type once, everything updates.
+        <strong>Freelancer Tracker</strong> is the ONE Excel system that tracks every client, invoice, hour and tax dollar — in 21 auto-linked sheets with <strong>5,163 formulas</strong> doing the math for you.
       </p>
-      <div class="hero__ctas">
-        <a class="btn btn--primary btn--lg js-buy" href="#" target="_blank" rel="noopener">
-          Buy Now
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-        <a class="btn btn--ghost btn--lg" href="#how">See How It Works</a>
-      </div>
-      <p class="hero__micro">Instant access through Gumroad · Works on Mac, Windows &amp; Google Sheets</p>
 
-      <ul class="hero__trust">
-        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> 21 linked sheets</li>
-        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> 5,163 formulas</li>
-        <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M20 6L9 17l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg> No subscription</li>
-      </ul>
+      <div class="hero__cta-stack">
+        <a class="btn btn--buy btn--xl js-buy" href="#" target="_blank" rel="noopener">
+          <span>Yes, I Want This</span>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <div class="hero__cta-note">
+          <span>✓ Instant .xlsx download</span>
+          <span>✓ Works on Mac, Windows &amp; Google Sheets</span>
+          <span>✓ One-time payment · lifetime access</span>
+        </div>
+      </div>
+
+      <div class="hero__scribble">
+        <svg width="90" height="48" viewBox="0 0 90 48" fill="none" aria-hidden="true">
+          <path d="M2 44 C 20 42, 30 20, 60 14 M60 14 L52 22 M60 14 L66 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" fill="none"/>
+        </svg>
+        <span>No subscription. No password. Yours forever.</span>
+      </div>
     </div>
 
     <div class="hero__visual reveal">
-      <div class="browser-frame" aria-hidden="true">
-        <div class="browser-frame__bar">
-          <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
-          <div class="browser-frame__url">freelancer-tracker.xlsx</div>
-        </div>
-        <div class="browser-frame__body">
-          <div class="mock mock--dashboard">
-            <div class="mock__header">
-              <div>
-                <div class="mock__title">Freelance Dashboard</div>
-                <div class="mock__sub">October 2026 · Auto-updated</div>
-              </div>
-              <div class="mock__tabs">
-                <span class="chip chip--active">Dashboard</span>
-                <span class="chip">Invoices</span>
-                <span class="chip">P&amp;L</span>
-                <span class="chip">Tax</span>
-              </div>
-            </div>
-            <div class="mock__kpis">
-              <div class="kpi"><div class="kpi__label">Income (YTD)</div><div class="kpi__value">$84,200</div><div class="kpi__delta kpi__delta--up">▲ 22%</div></div>
-              <div class="kpi"><div class="kpi__label">Net Profit</div><div class="kpi__value">$61,340</div><div class="kpi__delta kpi__delta--up">▲ 18%</div></div>
-              <div class="kpi"><div class="kpi__label">Tax Reserve</div><div class="kpi__value">$18,924</div><div class="kpi__delta">auto</div></div>
-              <div class="kpi"><div class="kpi__label">Overdue</div><div class="kpi__value">$2,350</div><div class="kpi__delta">3 invoices</div></div>
-            </div>
-            <div class="mock__row">
-              <div class="mock__chart">
-                <div class="mock__chart-title">Income vs Expenses</div>
-                <svg viewBox="0 0 320 120" preserveAspectRatio="none" class="mock__chart-svg">
-                  <path d="M0,90 L30,78 L60,82 L90,66 L120,70 L150,54 L180,60 L210,42 L240,46 L270,30 L300,36 L320,22 L320,120 L0,120 Z" fill="currentColor" fill-opacity="0.18"/>
-                  <path d="M0,90 L30,78 L60,82 L90,66 L120,70 L150,54 L180,60 L210,42 L240,46 L270,30 L300,36 L320,22" fill="none" stroke="currentColor" stroke-width="2"/>
-                  <path d="M0,104 L30,96 L60,98 L90,88 L120,92 L150,80 L180,86 L210,72 L240,78 L270,66 L300,72 L320,60" fill="none" stroke="#0b0f17" stroke-width="1.5" stroke-dasharray="3 3" opacity=".55"/>
-                </svg>
-              </div>
-              <div class="mock__list">
-                <div class="mock__list-title">Health Scorecard</div>
-                <ul>
-                  <li><span>Profit margin</span><span class="pill pill--green">✅ 73%</span></li>
-                  <li><span>Collection ratio</span><span class="pill pill--green">✅ 94%</span></li>
-                  <li><span>Overdue ratio</span><span class="pill pill--amber">⚠️ 8%</span></li>
-                  <li><span>Avg project fee</span><span class="pill pill--green">✅ $1,460</span></li>
-                  <li><span>Tax reserve</span><span class="pill pill--green">✅ on track</span></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <aside class="float-card reveal" aria-label="Get Freelancer Tracker">
-        <div class="float-card__eyebrow">GET FREELANCER TRACKER</div>
-        <div class="float-card__title">Complete 21-sheet Excel system</div>
-        <p class="float-card__desc">Clients, invoices, income, tax, time &amp; a live dashboard — all auto-linked.</p>
-        <a class="btn btn--primary btn--block js-buy" href="#" target="_blank" rel="noopener">Buy Now</a>
-        <a class="float-card__link js-buy" href="#" target="_blank" rel="noopener">View Product on Gumroad →</a>
-        <div class="float-card__secure">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
-          Purchase securely through Gumroad
-        </div>
-      </aside>
-    </div>
-  </div>
-</section>
-
-<!-- ============================= NUMBERS BAR ============================= -->
-<section class="stats">
-  <div class="container stats__grid">
-    <div class="stat reveal"><div class="stat__num">21</div><div class="stat__label">Linked sheets</div></div>
-    <div class="stat reveal"><div class="stat__num">5,163</div><div class="stat__label">Automatic formulas</div></div>
-    <div class="stat reveal"><div class="stat__num">9,366</div><div class="stat__label">Input cells</div></div>
-    <div class="stat reveal"><div class="stat__num">6</div><div class="stat__label">Live charts</div></div>
-    <div class="stat reveal"><div class="stat__num">0</div><div class="stat__label">Errors</div></div>
-  </div>
-</section>
-
-<!-- ============================= PROBLEM ============================= -->
-<section class="section" id="problem">
-  <div class="container">
-    <div class="section__head reveal">
-      <span class="eyebrow eyebrow--muted">THE PROBLEM</span>
-      <h2>Freelancing Gets Messy When Everything Lives in Different Places.</h2>
-      <p>Notes in one app. Invoices in another. Tax guesses in a third. Here's what that looks like day to day.</p>
-    </div>
-
-    <div class="grid grid--5">
-      <div class="card reveal">
-        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-        <h3>Scattered clients</h3>
-        <p>Contact info and project history spread across apps and inboxes.</p>
-      </div>
-      <div class="card reveal">
-        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 10h18" stroke="currentColor" stroke-width="2"/></svg></div>
-        <h3>Unorganized projects</h3>
-        <p>Hard to see what's active, what's waiting, and what's shipped.</p>
-      </div>
-      <div class="card reveal">
-        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 7v10M8 11l4-4 4 4M4 20h16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <h3>Missed deadlines</h3>
-        <p>Important dates slip through when there's no single source of truth.</p>
-      </div>
-      <div class="card reveal">
-        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 17l6-6 4 4 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 8h6v6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <h3>Unclear revenue</h3>
-        <p>No visibility into how much you've earned — or will earn — this month.</p>
-      </div>
-      <div class="card reveal">
-        <div class="card__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 10h18" stroke="currentColor" stroke-width="2"/></svg></div>
-        <h3>Tax guesswork</h3>
-        <p>SE tax, federal, state, VAT — guessed instead of calculated.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================= 21-SHEET SYSTEM ============================= -->
-<section class="section section--muted" id="system">
-  <div class="container">
-    <div class="section__head reveal">
-      <span class="eyebrow eyebrow--muted">COMPLETE 21-SHEET SYSTEM</span>
-      <h2>21 Sheets. 5,163 Formulas. One Living Spreadsheet.</h2>
-      <p>Set your rates and tax once in Settings — every one of the 21 sheets updates automatically. Yellow cells = you type. Green cells = calculated for you.</p>
-    </div>
-
-    <div class="sysgrid">
-      <article class="sys reveal">
-        <header class="sys__head"><span class="sys__ic">⚙️</span><h3>Settings</h3><span class="sys__count">1 sheet</span></header>
-        <ul>
-          <li><strong>Settings</strong> — Name, tax rates, hourly rate, annual goal, currency. Change once, all 21 sheets update automatically.</li>
-        </ul>
-      </article>
-
-      <article class="sys reveal">
-        <header class="sys__head"><span class="sys__ic">👥</span><h3>Client Management</h3><span class="sys__count">2 sheets</span></header>
-        <ul>
-          <li><strong>Clients</strong> — Full client database. Total billed &amp; paid auto-calculated from invoices.</li>
-          <li><strong>Client Profitability</strong> — Who makes you the most money? Effective rate/hour auto-calculated.</li>
-        </ul>
-      </article>
-
-      <article class="sys reveal">
-        <header class="sys__head"><span class="sys__ic">🧾</span><h3>Invoicing</h3><span class="sys__count">3 sheets</span></header>
-        <ul>
-          <li><strong>Invoice Tracker (200 rows)</strong> — Client name auto-fills, due date auto-calculates.</li>
-          <li><strong>Invoice Template</strong> — Print-ready, send directly to clients.</li>
-          <li><strong>Late Payment Tracker</strong> — Auto-flags every overdue invoice; days overdue auto-counted.</li>
-        </ul>
-      </article>
-
-      <article class="sys reveal">
-        <header class="sys__head"><span class="sys__ic">💰</span><h3>Income &amp; Expenses</h3><span class="sys__count">3 sheets</span></header>
-        <ul>
-          <li><strong>Income Log</strong> — Tax reserve auto-calculated on every payment received.</li>
-          <li><strong>Expense Tracker</strong> — Deductible amount auto-set (meals 50%, others 100%).</li>
-          <li><strong>Recurring Income</strong> — 12-month paid/unpaid grid for retainer clients.</li>
-        </ul>
-      </article>
-
-      <article class="sys reveal">
-        <header class="sys__head"><span class="sys__ic">📊</span><h3>Tax &amp; Financial Reports</h3><span class="sys__count">3 sheets</span></header>
-        <ul>
-          <li><strong>Tax Estimator</strong> — SE tax + Federal + State + VAT, fully automatic.</li>
-          <li><strong>Annual P&amp;L Report</strong> — Formal income statement, zero manual entry.</li>
-          <li><strong>Monthly Summary</strong> — 12-month breakdown, all auto-linked.</li>
-        </ul>
-      </article>
-
-      <article class="sys reveal">
-        <header class="sys__head"><span class="sys__ic">⏱️</span><h3>Time &amp; Project Tracking</h3><span class="sys__count">3 sheets</span></header>
-        <ul>
-          <li><strong>Projects &amp; Time</strong> — Rate auto-pulls from client sheet.</li>
-          <li><strong>Time Log (250 rows)</strong> — Hours = (end − start) × 24, auto-calculated.</li>
-          <li><strong>Proposals &amp; Contracts</strong> — Win rate &amp; pipeline value auto-calculated.</li>
-        </ul>
-      </article>
-
-      <article class="sys reveal">
-        <header class="sys__head"><span class="sys__ic">📈</span><h3>Planning &amp; Forecasting</h3><span class="sys__count">4 sheets</span></header>
-        <ul>
-          <li><strong>Rate Calculator</strong> — Minimum viable hourly rate from your living costs + profit target.</li>
-          <li><strong>Cashflow Forecast</strong> — 12-month cash projection linked from Monthly Summary.</li>
-          <li><strong>Goal Tracker</strong> — Monthly targets vs actuals with visual progress bars.</li>
-          <li><strong>Mileage &amp; Travel</strong> — IRS rate deduction auto-calculated per trip.</li>
-        </ul>
-      </article>
-
-      <article class="sys reveal sys--wide">
-        <header class="sys__head"><span class="sys__ic">📊</span><h3>Dashboard</h3><span class="sys__count">2 sheets</span></header>
-        <ul>
-          <li><strong>Live Dashboard</strong> — 6 live charts: income vs expenses, net profit, expense breakdown, cashflow trend, revenue by client, income by service type.</li>
-          <li><strong>Health Scorecard</strong> — 5 KPIs auto-scored with ✅ / ⚠️ status. All figures update in real time.</li>
-        </ul>
-      </article>
-    </div>
-
-    <div class="section__cta reveal">
-      <a class="btn btn--primary btn--lg js-buy" href="#" target="_blank" rel="noopener">Get the 21-Sheet System</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============================= SOLUTION ============================= -->
-<section class="section" id="solution">
-  <div class="container">
-    <div class="section__head reveal">
-      <span class="eyebrow eyebrow--muted">THE SOLUTION</span>
-      <h2>One Simple System for Your Freelance Business.</h2>
-      <p>ValueSheets Freelancer Tracker brings the information you need into one organized workflow.</p>
-    </div>
-
-    <div class="solution">
-      <div class="solution__visual reveal">
-        <div class="browser-frame">
-          <div class="browser-frame__bar">
+      <div class="product-shot">
+        <div class="product-shot__frame">
+          <div class="product-shot__bar">
             <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
-            <div class="browser-frame__url">freelancer-tracker.xlsx · Clients</div>
+            <div class="product-shot__url">Freelancer-Tracker.xlsx</div>
           </div>
-          <div class="browser-frame__body">
-            <div class="sheet">
-              <div class="sheet__toolbar">
-                <span class="chip chip--active">Clients</span>
-                <span class="chip">Invoices</span>
-                <span class="chip">Income</span>
-                <span class="chip">Expenses</span>
-              </div>
-              <table class="sheet__table">
-                <thead>
-                  <tr><th>Client</th><th>Contact</th><th>Status</th><th>Billed</th><th>Paid</th></tr>
-                </thead>
-                <tbody>
-                  <tr><td>Acme Co.</td><td>sara@acme.co</td><td><span class="pill pill--green">Active</span></td><td>$8,400</td><td class="is-auto">$8,400</td></tr>
-                  <tr><td>Nova Studio</td><td>mia@nova.io</td><td><span class="pill pill--green">Active</span></td><td>$5,200</td><td class="is-auto">$4,550</td></tr>
-                  <tr><td>Lumen Labs</td><td>finance@lumen.co</td><td><span class="pill">Lead</span></td><td>$1,100</td><td class="is-auto">$0</td></tr>
-                  <tr><td>Pixel Media</td><td>eli@pixel.tv</td><td><span class="pill pill--amber">Pending</span></td><td>$2,800</td><td class="is-auto">$0</td></tr>
-                  <tr><td>Oak &amp; Co.</td><td>hello@oak.co</td><td><span class="pill pill--green">Active</span></td><td>$12,900</td><td class="is-auto">$12,900</td></tr>
-                </tbody>
-              </table>
-              <div class="sheet__legend"><span class="dot-cell dot-cell--input"></span> yellow = you type<span class="dot-cell dot-cell--auto"></span> green = auto-calculated</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="solution__features reveal">
-        <div class="feature-row">
-          <div class="feature-row__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M16 11a4 4 0 10-8 0 4 4 0 008 0z" stroke="currentColor" stroke-width="2"/><path d="M4 21v-1a6 6 0 0112 0v1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <div><h4>Clients</h4><p>Full database with total billed &amp; paid auto-calculated.</p></div>
-        </div>
-        <div class="feature-row">
-          <div class="feature-row__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M7 9h10M7 13h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <div><h4>Invoices</h4><p>200-row tracker, print-ready template, auto late-payment flags.</p></div>
-        </div>
-        <div class="feature-row">
-          <div class="feature-row__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M3 17l6-6 4 4 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <div><h4>Income &amp; P&amp;L</h4><p>Annual P&amp;L and monthly summary — zero manual entry.</p></div>
-        </div>
-        <div class="feature-row">
-          <div class="feature-row__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 10h18" stroke="currentColor" stroke-width="2"/></svg></div>
-          <div><h4>Tax Estimator</h4><p>SE tax, Federal, State, VAT — all fully automatic.</p></div>
-        </div>
-        <div class="feature-row">
-          <div class="feature-row__ic"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 3v4M16 3v4M4 11h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <div><h4>Time &amp; Projects</h4><p>250-row time log, project rate pulled from client sheet.</p></div>
-        </div>
-        <div class="feature-row">
-          <div class="feature-row__ic"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <div><h4>Live Dashboard</h4><p>6 charts + health scorecard. Updates in real time.</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================= PRODUCT PREVIEW ============================= -->
-<section class="section section--muted" id="preview">
-  <div class="container">
-    <div class="section__head reveal">
-      <span class="eyebrow eyebrow--muted">PRODUCT PREVIEW</span>
-      <h2>See Your Freelance Business at a Glance.</h2>
-      <p>A clean, structured workbook that works the way you do.</p>
-    </div>
-
-    <div class="preview__tabs" role="tablist" aria-label="Product preview">
-      <button class="tab is-active" data-tab="dashboard" role="tab" aria-selected="true">Dashboard</button>
-      <button class="tab" data-tab="clients" role="tab" aria-selected="false">Clients</button>
-      <button class="tab" data-tab="invoices" role="tab" aria-selected="false">Invoices</button>
-      <button class="tab" data-tab="pnl" role="tab" aria-selected="false">P&amp;L</button>
-      <button class="tab" data-tab="tax" role="tab" aria-selected="false">Tax</button>
-      <button class="tab" data-tab="time" role="tab" aria-selected="false">Time</button>
-    </div>
-
-    <div class="preview__stage reveal">
-      <div class="browser-frame browser-frame--lg zoom-on-hover">
-        <div class="browser-frame__bar">
-          <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
-          <div class="browser-frame__url" id="previewUrl">freelancer-tracker.xlsx · Dashboard</div>
-        </div>
-        <div class="browser-frame__body">
-
-          <!-- Dashboard -->
-          <div class="pane is-active" data-pane="dashboard">
+          <div class="product-shot__body">
             <div class="mock mock--dashboard">
               <div class="mock__header">
-                <div><div class="mock__title">Live Dashboard</div><div class="mock__sub">October 2026 · 6 live charts · auto-updated</div></div>
+                <div>
+                  <div class="mock__title">Your Freelance Dashboard</div>
+                  <div class="mock__sub">October 2026 · updates in real time</div>
+                </div>
               </div>
               <div class="mock__kpis">
                 <div class="kpi"><div class="kpi__label">Income (YTD)</div><div class="kpi__value">$84,200</div><div class="kpi__delta kpi__delta--up">▲ 22%</div></div>
@@ -392,9 +112,9 @@
                 <div class="mock__chart">
                   <div class="mock__chart-title">Income vs Expenses</div>
                   <svg viewBox="0 0 320 120" preserveAspectRatio="none" class="mock__chart-svg">
-                    <path d="M0,90 L30,78 L60,82 L90,66 L120,70 L150,54 L180,60 L210,42 L240,46 L270,30 L300,36 L320,22 L320,120 L0,120 Z" fill="currentColor" fill-opacity="0.18"/>
-                    <path d="M0,90 L30,78 L60,82 L90,66 L120,70 L150,54 L180,60 L210,42 L240,46 L270,30 L300,36 L320,22" fill="none" stroke="currentColor" stroke-width="2"/>
-                    <path d="M0,104 L30,96 L60,98 L90,88 L120,92 L150,80 L180,86 L210,72 L240,78 L270,66 L300,72 L320,60" fill="none" stroke="#0b0f17" stroke-width="1.5" stroke-dasharray="3 3" opacity=".55"/>
+                    <path d="M0,90 L30,78 L60,82 L90,66 L120,70 L150,54 L180,60 L210,42 L240,46 L270,30 L300,36 L320,22 L320,120 L0,120 Z" fill="currentColor" fill-opacity="0.2"/>
+                    <path d="M0,90 L30,78 L60,82 L90,66 L120,70 L150,54 L180,60 L210,42 L240,46 L270,30 L300,36 L320,22" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                    <path d="M0,104 L30,96 L60,98 L90,88 L120,92 L150,80 L180,86 L210,72 L240,78 L270,66 L300,72 L320,60" fill="none" stroke="#1f2937" stroke-width="1.5" stroke-dasharray="3 3" opacity=".5"/>
                   </svg>
                 </div>
                 <div class="mock__list">
@@ -410,320 +130,415 @@
               </div>
             </div>
           </div>
+        </div>
 
-          <!-- Clients -->
-          <div class="pane" data-pane="clients">
-            <div class="sheet">
-              <table class="sheet__table">
-                <thead><tr><th>Client</th><th>Email</th><th>Status</th><th>Projects</th><th>Billed</th><th>Paid</th></tr></thead>
-                <tbody>
-                  <tr><td>Acme Co.</td><td>sara@acme.co</td><td><span class="pill pill--green">Active</span></td><td>3</td><td>$8,400</td><td class="is-auto">$8,400</td></tr>
-                  <tr><td>Nova Studio</td><td>mia@nova.io</td><td><span class="pill pill--green">Active</span></td><td>2</td><td>$5,200</td><td class="is-auto">$4,550</td></tr>
-                  <tr><td>Lumen Labs</td><td>finance@lumen.co</td><td><span class="pill">Lead</span></td><td>1</td><td>$1,100</td><td class="is-auto">$0</td></tr>
-                  <tr><td>Pixel Media</td><td>eli@pixel.tv</td><td><span class="pill pill--amber">Pending</span></td><td>1</td><td>$2,800</td><td class="is-auto">$0</td></tr>
-                  <tr><td>Oak &amp; Co.</td><td>hello@oak.co</td><td><span class="pill pill--green">Active</span></td><td>4</td><td>$12,900</td><td class="is-auto">$12,900</td></tr>
-                  <tr><td>Fern Studio</td><td>ivy@fern.studio</td><td><span class="pill pill--green">Active</span></td><td>2</td><td>$3,600</td><td class="is-auto">$3,600</td></tr>
-                </tbody>
-              </table>
-              <div class="sheet__legend"><span class="dot-cell dot-cell--input"></span> you type<span class="dot-cell dot-cell--auto"></span> auto-calculated</div>
-            </div>
-          </div>
-
-          <!-- Invoices -->
-          <div class="pane" data-pane="invoices">
-            <div class="sheet">
-              <table class="sheet__table">
-                <thead><tr><th>Invoice</th><th>Client</th><th>Issued</th><th>Due</th><th>Amount</th><th>Status</th></tr></thead>
-                <tbody>
-                  <tr><td>INV-2026-041</td><td>Acme Co.</td><td>Sep 14</td><td class="is-auto">Sep 28</td><td>$3,200</td><td><span class="pill pill--green">Paid</span></td></tr>
-                  <tr><td>INV-2026-042</td><td>Nova Studio</td><td>Sep 26</td><td class="is-auto">Oct 10</td><td>$650</td><td><span class="pill pill--amber">Sent</span></td></tr>
-                  <tr><td>INV-2026-043</td><td>Lumen Labs</td><td>Sep 18</td><td class="is-auto">Oct 02</td><td>$1,100</td><td><span class="pill pill--red">Overdue · 2d</span></td></tr>
-                  <tr><td>INV-2026-044</td><td>Oak &amp; Co.</td><td>Oct 11</td><td class="is-auto">Oct 25</td><td>$2,400</td><td><span class="pill">Draft</span></td></tr>
-                  <tr><td>INV-2026-045</td><td>Pixel Media</td><td>Oct 06</td><td class="is-auto">Oct 20</td><td>$2,800</td><td><span class="pill pill--amber">Sent</span></td></tr>
-                </tbody>
-              </table>
-              <div class="sheet__legend"><span class="dot-cell dot-cell--input"></span> you type<span class="dot-cell dot-cell--auto"></span> due date auto-calculates</div>
-            </div>
-          </div>
-
-          <!-- P&L -->
-          <div class="pane" data-pane="pnl">
-            <div class="mock mock--dashboard">
-              <div class="mock__header"><div><div class="mock__title">Annual P&amp;L</div><div class="mock__sub">Fiscal year 2026 · auto-linked</div></div></div>
-              <div class="mock__kpis">
-                <div class="kpi"><div class="kpi__label">Revenue</div><div class="kpi__value">$84,200</div></div>
-                <div class="kpi"><div class="kpi__label">Expenses</div><div class="kpi__value">$22,860</div></div>
-                <div class="kpi"><div class="kpi__label">Net Profit</div><div class="kpi__value">$61,340</div><div class="kpi__delta kpi__delta--up">73% margin</div></div>
-                <div class="kpi"><div class="kpi__label">Owner Draw</div><div class="kpi__value">$42,000</div></div>
-              </div>
-              <div class="bars">
-                <div class="bar" style="--h:40%"><span>Jan</span></div>
-                <div class="bar" style="--h:55%"><span>Feb</span></div>
-                <div class="bar" style="--h:48%"><span>Mar</span></div>
-                <div class="bar" style="--h:62%"><span>Apr</span></div>
-                <div class="bar" style="--h:72%"><span>May</span></div>
-                <div class="bar" style="--h:68%"><span>Jun</span></div>
-                <div class="bar" style="--h:92%"><span>Jul</span></div>
-                <div class="bar" style="--h:78%"><span>Aug</span></div>
-                <div class="bar" style="--h:70%"><span>Sep</span></div>
-                <div class="bar bar--active" style="--h:84%"><span>Oct</span></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Tax -->
-          <div class="pane" data-pane="tax">
-            <div class="sheet">
-              <table class="sheet__table">
-                <thead><tr><th>Tax type</th><th>Rate</th><th>Base</th><th>Estimated</th><th>Reserved</th></tr></thead>
-                <tbody>
-                  <tr><td>Self-Employment</td><td>15.3%</td><td>$61,340</td><td class="is-auto">$9,385</td><td class="is-auto">$9,385</td></tr>
-                  <tr><td>Federal Income</td><td>22%</td><td>$61,340</td><td class="is-auto">$5,414</td><td class="is-auto">$5,414</td></tr>
-                  <tr><td>State Income</td><td>5%</td><td>$61,340</td><td class="is-auto">$3,067</td><td class="is-auto">$3,067</td></tr>
-                  <tr><td>VAT (if applicable)</td><td>0%</td><td>$0</td><td class="is-auto">$0</td><td class="is-auto">$0</td></tr>
-                  <tr><td><strong>Total reserve</strong></td><td></td><td></td><td class="is-auto"><strong>$17,866</strong></td><td class="is-auto"><strong>$17,866</strong></td></tr>
-                </tbody>
-              </table>
-              <div class="sheet__legend"><span class="dot-cell dot-cell--input"></span> set in Settings<span class="dot-cell dot-cell--auto"></span> auto-calculated</div>
-            </div>
-          </div>
-
-          <!-- Time -->
-          <div class="pane" data-pane="time">
-            <div class="sheet">
-              <table class="sheet__table">
-                <thead><tr><th>Date</th><th>Client</th><th>Project</th><th>Start</th><th>End</th><th>Hours</th><th>Billable</th></tr></thead>
-                <tbody>
-                  <tr><td>Oct 03</td><td>Acme Co.</td><td>Brand site</td><td>09:00</td><td>12:30</td><td class="is-auto">3.5</td><td class="is-auto">$315</td></tr>
-                  <tr><td>Oct 03</td><td>Nova Studio</td><td>Logo revisions</td><td>13:30</td><td>15:00</td><td class="is-auto">1.5</td><td class="is-auto">$135</td></tr>
-                  <tr><td>Oct 04</td><td>Oak &amp; Co.</td><td>Landing page</td><td>09:30</td><td>13:45</td><td class="is-auto">4.25</td><td class="is-auto">$425</td></tr>
-                  <tr><td>Oct 04</td><td>Pixel Media</td><td>Video edit</td><td>14:00</td><td>18:30</td><td class="is-auto">4.5</td><td class="is-auto">$450</td></tr>
-                </tbody>
-              </table>
-              <div class="sheet__legend"><span class="dot-cell dot-cell--input"></span> start/end you type<span class="dot-cell dot-cell--auto"></span> hours = (end − start) × 24</div>
-            </div>
-          </div>
-
+        <div class="sticker sticker--tag">
+          <small>21 Sheets</small>
+          <strong>Fully Linked</strong>
+        </div>
+        <div class="sticker sticker--round">
+          <strong>5,163</strong>
+          <small>auto formulas</small>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================= FEATURES ============================= -->
-<section class="section" id="features">
-  <div class="container">
+<!-- ============================= PAIN SECTION ============================= -->
+<section class="section section--cream" id="pain">
+  <div class="container container--narrow">
     <div class="section__head reveal">
-      <span class="eyebrow eyebrow--muted">FEATURES</span>
-      <h2>Everything You Need to Stay Organized.</h2>
-      <p>A focused, no-fluff toolkit built around the real work of freelancing.</p>
+      <h2 class="h-serif">Does this sound like <em>you</em>?</h2>
     </div>
 
-    <div class="grid grid--4">
-      <div class="feature reveal">
-        <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M16 11a4 4 0 10-8 0 4 4 0 008 0z" stroke="currentColor" stroke-width="2"/><path d="M4 21v-1a6 6 0 0112 0v1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-        <h3>Client Tracking</h3>
-        <p>Full database with lifetime billed &amp; paid auto-calculated.</p>
+    <ul class="pain-list reveal">
+      <li>You lose <strong>hours every week</strong> digging through emails to find invoice numbers.</li>
+      <li>You can never tell if that client has <strong>actually paid you</strong> — or if you forgot to send the invoice.</li>
+      <li>Tax season arrives and you're frantically searching for receipts you <em>meant</em> to save.</li>
+      <li>You charge your hourly rate but have no idea if it's <strong>actually profitable</strong>.</li>
+      <li>You open 7 different Google Sheets just to answer: "how much did I make this month?"</li>
+      <li>You know you should forecast cashflow but <strong>who has the time?</strong></li>
+    </ul>
+
+    <p class="pain-kicker reveal">
+      You didn't quit your job to become a <em>bookkeeper</em>. You went freelance to do your craft.<br/>
+      <strong>Freelancer Tracker is how you get back to the work you love.</strong>
+    </p>
+  </div>
+</section>
+
+<!-- ============================= INTRODUCE PRODUCT ============================= -->
+<section class="section" id="intro">
+  <div class="container">
+    <div class="intro reveal">
+      <div class="intro__eyebrow">INTRODUCING</div>
+      <h2 class="h-serif intro__title">
+        The <em>only</em> spreadsheet you'll ever need<br/>to run your freelance business.
+      </h2>
+      <p class="intro__sub">
+        One file. 21 sheets. 5,163 formulas doing the math for you. You type in the yellow cells — the green cells fill in automatically.
+      </p>
+
+      <div class="intro__stats">
+        <div><strong>21</strong><span>Linked sheets</span></div>
+        <div><strong>5,163</strong><span>Auto formulas</span></div>
+        <div><strong>9,366</strong><span>Input cells</span></div>
+        <div><strong>6</strong><span>Live charts</span></div>
+        <div><strong>0</strong><span>Errors</span></div>
       </div>
-      <div class="feature reveal">
-        <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="2"/><path d="M7 9h10M7 13h7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-        <h3>Invoicing</h3>
-        <p>200-row tracker, print-ready template, overdue auto-flags.</p>
-      </div>
-      <div class="feature reveal">
-        <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M3 17l6-6 4 4 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <h3>Income &amp; Expenses</h3>
-        <p>Tax reserve on every payment. Deductibles handled automatically.</p>
-      </div>
-      <div class="feature reveal">
-        <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="6" width="18" height="12" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 10h18" stroke="currentColor" stroke-width="2"/></svg></div>
-        <h3>Tax Estimator</h3>
-        <p>SE tax + Federal + State + VAT, fully automatic.</p>
-      </div>
-      <div class="feature reveal">
-        <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none"><rect x="4" y="5" width="16" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 3v4M16 3v4M4 11h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-        <h3>Time Tracking</h3>
-        <p>250-row log with hours = (end − start) × 24, auto-calculated.</p>
-      </div>
-      <div class="feature reveal">
-        <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></div>
-        <h3>Live Dashboard</h3>
-        <p>6 charts + 5-KPI health scorecard, auto-scored ✅ / ⚠️.</p>
-      </div>
-      <div class="feature reveal">
-        <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M4 12h12M12 4l8 8-8 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <h3>Cashflow Forecast</h3>
-        <p>12-month cash projection linked from your Monthly Summary.</p>
-      </div>
-      <div class="feature reveal">
-        <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20l-7-4V8l7-4 7 4v8l-7 4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M5 8l7 4 7-4M12 12v8" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></div>
-        <h3>Rate Calculator</h3>
-        <p>Minimum viable hourly rate from living costs + profit target.</p>
-      </div>
+
+      <a class="btn btn--buy btn--xl js-buy" href="#" target="_blank" rel="noopener">
+        <span>Get Instant Access</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ============================= HOW IT WORKS ============================= -->
-<section class="section section--muted" id="how">
+<!-- ============================= WHAT'S INSIDE ============================= -->
+<section class="section section--cream" id="whats-inside">
   <div class="container">
     <div class="section__head reveal">
-      <span class="eyebrow eyebrow--muted">HOW IT WORKS</span>
-      <h2>Start Organizing in Minutes.</h2>
-      <p>Four simple steps from purchase to a clearer freelance business.</p>
+      <div class="section__eyebrow">EVERYTHING YOU GET INSIDE</div>
+      <h2 class="h-serif">A complete 21-sheet system — grouped the way freelancers think.</h2>
+      <p>Set your rates and tax <em>once</em> in Settings. Every one of the 21 sheets updates automatically.</p>
     </div>
 
-    <ol class="steps">
-      <li class="step reveal"><div class="step__num">01</div><h3>Buy</h3><p>Click Buy Now and purchase Freelancer Tracker through Gumroad.</p></li>
-      <li class="step reveal"><div class="step__num">02</div><h3>Download</h3><p>Instant access to the .xlsx file after purchase.</p></li>
-      <li class="step reveal"><div class="step__num">03</div><h3>Set &amp; Customize</h3><p>Fill out Settings once — rates, tax, goals — all 21 sheets update.</p></li>
-      <li class="step reveal"><div class="step__num">04</div><h3>Track</h3><p>Enter yellow cells; watch green cells, dashboard &amp; KPIs recalculate.</p></li>
-    </ol>
+    <div class="inside">
+      <article class="inside__card reveal">
+        <div class="inside__icon">⚙️</div>
+        <h3>Settings <span>(1 sheet)</span></h3>
+        <p>Your name, tax rates, hourly rate, annual goal, currency. Change it once — all 21 sheets update automatically. <strong>No formula editing.</strong></p>
+      </article>
+
+      <article class="inside__card reveal">
+        <div class="inside__icon">👥</div>
+        <h3>Client Management <span>(2 sheets)</span></h3>
+        <ul>
+          <li><strong>Clients</strong> — full database; total billed &amp; paid auto-calculated from invoices.</li>
+          <li><strong>Client Profitability</strong> — see which clients make you the most money per hour.</li>
+        </ul>
+      </article>
+
+      <article class="inside__card reveal">
+        <div class="inside__icon">🧾</div>
+        <h3>Invoicing <span>(3 sheets)</span></h3>
+        <ul>
+          <li><strong>Invoice Tracker</strong> — 200 rows; client name auto-fills, due date auto-calculates.</li>
+          <li><strong>Invoice Template</strong> — print-ready, send directly to clients.</li>
+          <li><strong>Late Payment Tracker</strong> — auto-flags every overdue invoice. No more "did they pay yet?"</li>
+        </ul>
+      </article>
+
+      <article class="inside__card reveal">
+        <div class="inside__icon">💰</div>
+        <h3>Income &amp; Expenses <span>(3 sheets)</span></h3>
+        <ul>
+          <li><strong>Income Log</strong> — tax reserve auto-calculated on every payment.</li>
+          <li><strong>Expense Tracker</strong> — deductibles auto (meals 50%, others 100%).</li>
+          <li><strong>Recurring Income</strong> — 12-month paid/unpaid grid for retainer clients.</li>
+        </ul>
+      </article>
+
+      <article class="inside__card reveal">
+        <div class="inside__icon">📊</div>
+        <h3>Tax &amp; Reports <span>(3 sheets)</span></h3>
+        <ul>
+          <li><strong>Tax Estimator</strong> — SE tax + Federal + State + VAT, fully automatic.</li>
+          <li><strong>Annual P&amp;L</strong> — formal income statement, zero manual entry.</li>
+          <li><strong>Monthly Summary</strong> — 12-month breakdown, all auto-linked.</li>
+        </ul>
+      </article>
+
+      <article class="inside__card reveal">
+        <div class="inside__icon">⏱️</div>
+        <h3>Time &amp; Projects <span>(3 sheets)</span></h3>
+        <ul>
+          <li><strong>Projects &amp; Time</strong> — rate auto-pulls from the client sheet.</li>
+          <li><strong>Time Log</strong> — 250 rows; hours = (end − start) × 24, auto-calculated.</li>
+          <li><strong>Proposals &amp; Contracts</strong> — win rate &amp; pipeline value auto-tracked.</li>
+        </ul>
+      </article>
+
+      <article class="inside__card reveal">
+        <div class="inside__icon">📈</div>
+        <h3>Planning &amp; Forecasting <span>(4 sheets)</span></h3>
+        <ul>
+          <li><strong>Rate Calculator</strong> — minimum viable rate from your living costs + profit target.</li>
+          <li><strong>Cashflow Forecast</strong> — 12-month projection linked from Monthly Summary.</li>
+          <li><strong>Goal Tracker</strong> — monthly targets vs actuals with visual progress bars.</li>
+          <li><strong>Mileage &amp; Travel</strong> — IRS rate deduction auto-calculated per trip.</li>
+        </ul>
+      </article>
+
+      <article class="inside__card inside__card--wide reveal">
+        <div class="inside__icon">📊</div>
+        <h3>Live Dashboard <span>(2 sheets)</span></h3>
+        <p><strong>6 live charts:</strong> income vs expenses · net profit · expense breakdown · cashflow trend · revenue by client · income by service type.</p>
+        <p><strong>Health Scorecard:</strong> 5 KPIs auto-scored with ✅ / ⚠️. Everything updates in real time as you enter data.</p>
+      </article>
+    </div>
 
     <div class="section__cta reveal">
-      <a class="btn btn--primary btn--lg js-buy" href="#" target="_blank" rel="noopener">Buy Now</a>
+      <a class="btn btn--buy btn--xl js-buy" href="#" target="_blank" rel="noopener">
+        <span>Grab Your Copy</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ============================= WHO IT'S FOR ============================= -->
-<section class="section" id="who">
+<!-- ============================= PRODUCT PREVIEW ============================= -->
+<section class="section" id="preview">
   <div class="container">
     <div class="section__head reveal">
-      <span class="eyebrow eyebrow--muted">PERFECT FOR</span>
-      <h2>Built for Independent Professionals.</h2>
-      <p>If you run your own business, this tracker was made for you.</p>
+      <div class="section__eyebrow">A PEEK INSIDE</div>
+      <h2 class="h-serif">Here's exactly what you'll see when you open it.</h2>
+      <p>Click a tab. This is the real thing — simplified for the web.</p>
     </div>
 
-    <div class="personas">
-      <div class="persona reveal"><span class="persona__ic">◇</span>Freelance Designers</div>
-      <div class="persona reveal"><span class="persona__ic">◉</span>Developers</div>
-      <div class="persona reveal"><span class="persona__ic">◈</span>Consultants</div>
-      <div class="persona reveal"><span class="persona__ic">◉</span>Photographers</div>
-      <div class="persona reveal"><span class="persona__ic">✎</span>Content Creators</div>
-      <div class="persona reveal"><span class="persona__ic">✦</span>Coaches</div>
-      <div class="persona reveal"><span class="persona__ic">◆</span>Anyone Self-Employed</div>
+    <div class="preview__tabs" role="tablist" aria-label="Product preview">
+      <button class="tab is-active" data-tab="dashboard" role="tab" aria-selected="true">Dashboard</button>
+      <button class="tab" data-tab="clients" role="tab" aria-selected="false">Clients</button>
+      <button class="tab" data-tab="invoices" role="tab" aria-selected="false">Invoices</button>
+      <button class="tab" data-tab="pnl" role="tab" aria-selected="false">P&amp;L</button>
+      <button class="tab" data-tab="tax" role="tab" aria-selected="false">Tax</button>
+      <button class="tab" data-tab="time" role="tab" aria-selected="false">Time</button>
+    </div>
+
+    <div class="preview__stage reveal">
+      <div class="product-shot zoom-on-hover">
+        <div class="product-shot__frame">
+          <div class="product-shot__bar">
+            <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+            <div class="product-shot__url" id="previewUrl">Freelancer-Tracker.xlsx · Dashboard</div>
+          </div>
+          <div class="product-shot__body">
+
+            <div class="pane is-active" data-pane="dashboard">
+              <div class="mock mock--dashboard">
+                <div class="mock__header"><div><div class="mock__title">Live Dashboard</div><div class="mock__sub">6 live charts · auto-updated</div></div></div>
+                <div class="mock__kpis">
+                  <div class="kpi"><div class="kpi__label">Income (YTD)</div><div class="kpi__value">$84,200</div><div class="kpi__delta kpi__delta--up">▲ 22%</div></div>
+                  <div class="kpi"><div class="kpi__label">Net Profit</div><div class="kpi__value">$61,340</div><div class="kpi__delta kpi__delta--up">▲ 18%</div></div>
+                  <div class="kpi"><div class="kpi__label">Tax Reserve</div><div class="kpi__value">$18,924</div><div class="kpi__delta">auto</div></div>
+                  <div class="kpi"><div class="kpi__label">Overdue</div><div class="kpi__value">$2,350</div><div class="kpi__delta">3 invoices</div></div>
+                </div>
+                <div class="mock__row">
+                  <div class="mock__chart">
+                    <div class="mock__chart-title">Income vs Expenses</div>
+                    <svg viewBox="0 0 320 120" preserveAspectRatio="none" class="mock__chart-svg">
+                      <path d="M0,90 L30,78 L60,82 L90,66 L120,70 L150,54 L180,60 L210,42 L240,46 L270,30 L300,36 L320,22 L320,120 L0,120 Z" fill="currentColor" fill-opacity="0.18"/>
+                      <path d="M0,90 L30,78 L60,82 L90,66 L120,70 L150,54 L180,60 L210,42 L240,46 L270,30 L300,36 L320,22" fill="none" stroke="currentColor" stroke-width="2"/>
+                    </svg>
+                  </div>
+                  <div class="mock__list">
+                    <div class="mock__list-title">Health Scorecard</div>
+                    <ul>
+                      <li><span>Profit margin</span><span class="pill pill--green">✅ 73%</span></li>
+                      <li><span>Collection ratio</span><span class="pill pill--green">✅ 94%</span></li>
+                      <li><span>Overdue ratio</span><span class="pill pill--amber">⚠️ 8%</span></li>
+                      <li><span>Avg project fee</span><span class="pill pill--green">✅ $1,460</span></li>
+                      <li><span>Tax reserve</span><span class="pill pill--green">✅ on track</span></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pane" data-pane="clients">
+              <div class="sheet">
+                <table class="sheet__table">
+                  <thead><tr><th>Client</th><th>Email</th><th>Status</th><th>Projects</th><th>Billed</th><th>Paid</th></tr></thead>
+                  <tbody>
+                    <tr><td>Acme Co.</td><td>sara@acme.co</td><td><span class="pill pill--green">Active</span></td><td>3</td><td>$8,400</td><td class="is-auto">$8,400</td></tr>
+                    <tr><td>Nova Studio</td><td>mia@nova.io</td><td><span class="pill pill--green">Active</span></td><td>2</td><td>$5,200</td><td class="is-auto">$4,550</td></tr>
+                    <tr><td>Lumen Labs</td><td>finance@lumen.co</td><td><span class="pill">Lead</span></td><td>1</td><td>$1,100</td><td class="is-auto">$0</td></tr>
+                    <tr><td>Pixel Media</td><td>eli@pixel.tv</td><td><span class="pill pill--amber">Pending</span></td><td>1</td><td>$2,800</td><td class="is-auto">$0</td></tr>
+                    <tr><td>Oak &amp; Co.</td><td>hello@oak.co</td><td><span class="pill pill--green">Active</span></td><td>4</td><td>$12,900</td><td class="is-auto">$12,900</td></tr>
+                  </tbody>
+                </table>
+                <div class="sheet__legend"><span class="dot-cell dot-cell--input"></span> you type<span class="dot-cell dot-cell--auto"></span> auto-calculated</div>
+              </div>
+            </div>
+
+            <div class="pane" data-pane="invoices">
+              <div class="sheet">
+                <table class="sheet__table">
+                  <thead><tr><th>Invoice</th><th>Client</th><th>Issued</th><th>Due</th><th>Amount</th><th>Status</th></tr></thead>
+                  <tbody>
+                    <tr><td>INV-2026-041</td><td>Acme Co.</td><td>Sep 14</td><td class="is-auto">Sep 28</td><td>$3,200</td><td><span class="pill pill--green">Paid</span></td></tr>
+                    <tr><td>INV-2026-042</td><td>Nova Studio</td><td>Sep 26</td><td class="is-auto">Oct 10</td><td>$650</td><td><span class="pill pill--amber">Sent</span></td></tr>
+                    <tr><td>INV-2026-043</td><td>Lumen Labs</td><td>Sep 18</td><td class="is-auto">Oct 02</td><td>$1,100</td><td><span class="pill pill--red">Overdue · 2d</span></td></tr>
+                    <tr><td>INV-2026-044</td><td>Oak &amp; Co.</td><td>Oct 11</td><td class="is-auto">Oct 25</td><td>$2,400</td><td><span class="pill">Draft</span></td></tr>
+                    <tr><td>INV-2026-045</td><td>Pixel Media</td><td>Oct 06</td><td class="is-auto">Oct 20</td><td>$2,800</td><td><span class="pill pill--amber">Sent</span></td></tr>
+                  </tbody>
+                </table>
+                <div class="sheet__legend"><span class="dot-cell dot-cell--input"></span> you type<span class="dot-cell dot-cell--auto"></span> due date auto-calculates</div>
+              </div>
+            </div>
+
+            <div class="pane" data-pane="pnl">
+              <div class="mock mock--dashboard">
+                <div class="mock__header"><div><div class="mock__title">Annual P&amp;L</div><div class="mock__sub">Fiscal year 2026 · auto-linked</div></div></div>
+                <div class="mock__kpis">
+                  <div class="kpi"><div class="kpi__label">Revenue</div><div class="kpi__value">$84,200</div></div>
+                  <div class="kpi"><div class="kpi__label">Expenses</div><div class="kpi__value">$22,860</div></div>
+                  <div class="kpi"><div class="kpi__label">Net Profit</div><div class="kpi__value">$61,340</div><div class="kpi__delta kpi__delta--up">73% margin</div></div>
+                  <div class="kpi"><div class="kpi__label">Owner Draw</div><div class="kpi__value">$42,000</div></div>
+                </div>
+                <div class="bars">
+                  <div class="bar" style="--h:40%"><span>Jan</span></div>
+                  <div class="bar" style="--h:55%"><span>Feb</span></div>
+                  <div class="bar" style="--h:48%"><span>Mar</span></div>
+                  <div class="bar" style="--h:62%"><span>Apr</span></div>
+                  <div class="bar" style="--h:72%"><span>May</span></div>
+                  <div class="bar" style="--h:68%"><span>Jun</span></div>
+                  <div class="bar" style="--h:92%"><span>Jul</span></div>
+                  <div class="bar" style="--h:78%"><span>Aug</span></div>
+                  <div class="bar" style="--h:70%"><span>Sep</span></div>
+                  <div class="bar bar--active" style="--h:84%"><span>Oct</span></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pane" data-pane="tax">
+              <div class="sheet">
+                <table class="sheet__table">
+                  <thead><tr><th>Tax type</th><th>Rate</th><th>Base</th><th>Estimated</th><th>Reserved</th></tr></thead>
+                  <tbody>
+                    <tr><td>Self-Employment</td><td>15.3%</td><td>$61,340</td><td class="is-auto">$9,385</td><td class="is-auto">$9,385</td></tr>
+                    <tr><td>Federal Income</td><td>22%</td><td>$61,340</td><td class="is-auto">$5,414</td><td class="is-auto">$5,414</td></tr>
+                    <tr><td>State Income</td><td>5%</td><td>$61,340</td><td class="is-auto">$3,067</td><td class="is-auto">$3,067</td></tr>
+                    <tr><td>VAT (if applicable)</td><td>0%</td><td>$0</td><td class="is-auto">$0</td><td class="is-auto">$0</td></tr>
+                    <tr><td><strong>Total reserve</strong></td><td></td><td></td><td class="is-auto"><strong>$17,866</strong></td><td class="is-auto"><strong>$17,866</strong></td></tr>
+                  </tbody>
+                </table>
+                <div class="sheet__legend"><span class="dot-cell dot-cell--input"></span> set in Settings<span class="dot-cell dot-cell--auto"></span> auto-calculated</div>
+              </div>
+            </div>
+
+            <div class="pane" data-pane="time">
+              <div class="sheet">
+                <table class="sheet__table">
+                  <thead><tr><th>Date</th><th>Client</th><th>Project</th><th>Start</th><th>End</th><th>Hours</th><th>Billable</th></tr></thead>
+                  <tbody>
+                    <tr><td>Oct 03</td><td>Acme Co.</td><td>Brand site</td><td>09:00</td><td>12:30</td><td class="is-auto">3.5</td><td class="is-auto">$315</td></tr>
+                    <tr><td>Oct 03</td><td>Nova Studio</td><td>Logo revisions</td><td>13:30</td><td>15:00</td><td class="is-auto">1.5</td><td class="is-auto">$135</td></tr>
+                    <tr><td>Oct 04</td><td>Oak &amp; Co.</td><td>Landing page</td><td>09:30</td><td>13:45</td><td class="is-auto">4.25</td><td class="is-auto">$425</td></tr>
+                    <tr><td>Oct 04</td><td>Pixel Media</td><td>Video edit</td><td>14:00</td><td>18:30</td><td class="is-auto">4.5</td><td class="is-auto">$450</td></tr>
+                  </tbody>
+                </table>
+                <div class="sheet__legend"><span class="dot-cell dot-cell--input"></span> start/end you type<span class="dot-cell dot-cell--auto"></span> hours = (end − start) × 24</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= PERFECT FOR ============================= -->
+<section class="section section--cream" id="who">
+  <div class="container container--narrow">
+    <div class="section__head reveal">
+      <div class="section__eyebrow">PERFECT FOR</div>
+      <h2 class="h-serif">If you work for yourself — this was built for you.</h2>
+    </div>
+
+    <div class="personas reveal">
+      <span class="persona">✦ Freelance Designers</span>
+      <span class="persona">◉ Developers</span>
+      <span class="persona">◈ Consultants</span>
+      <span class="persona">◉ Photographers</span>
+      <span class="persona">✎ Content Creators</span>
+      <span class="persona">✦ Coaches</span>
+      <span class="persona">◆ Anyone self-employed</span>
     </div>
   </div>
 </section>
 
 <!-- ============================= BEFORE / AFTER ============================= -->
-<section class="section section--muted" id="compare">
+<section class="section" id="compare">
   <div class="container">
     <div class="section__head reveal">
-      <span class="eyebrow eyebrow--muted">BEFORE vs AFTER</span>
-      <h2>From Chaos to Clarity.</h2>
-      <p>What changes when all your freelance information lives in one place.</p>
+      <div class="section__eyebrow">THE DIFFERENCE</div>
+      <h2 class="h-serif">From Sunday-night panic<br/>to Sunday-night peace.</h2>
     </div>
 
     <div class="compare reveal">
       <div class="compare__col compare__col--before">
-        <div class="compare__label">Without a System</div>
+        <div class="compare__label">😮‍💨 Without it</div>
         <ul>
-          <li><span class="x">✕</span> Scattered information</li>
-          <li><span class="x">✕</span> Multiple spreadsheets</li>
-          <li><span class="x">✕</span> Unclear project status</li>
-          <li><span class="x">✕</span> Missed follow-ups</li>
-          <li><span class="x">✕</span> Difficult payment tracking</li>
-          <li><span class="x">✕</span> Tax &amp; cashflow guesswork</li>
+          <li><span class="x">✕</span> Information scattered across 6 apps</li>
+          <li><span class="x">✕</span> "Did they pay me yet?" every week</li>
+          <li><span class="x">✕</span> Guessing your tax bill in April</li>
+          <li><span class="x">✕</span> No idea which clients are profitable</li>
+          <li><span class="x">✕</span> Hours spent on admin, not craft</li>
+          <li><span class="x">✕</span> Zero visibility into next month's cash</li>
         </ul>
       </div>
-
-      <div class="compare__arrow" aria-hidden="true">
-        <span>CHAOS</span>
-        <svg width="56" height="24" viewBox="0 0 56 24" fill="none"><path d="M2 12h50M44 4l10 8-10 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span>CLARITY</span>
-      </div>
-
       <div class="compare__col compare__col--after">
-        <div class="compare__label">With Freelancer Tracker</div>
+        <div class="compare__label">🌿 With Freelancer Tracker</div>
         <ul>
-          <li><span class="v">✓</span> 21 auto-linked sheets</li>
-          <li><span class="v">✓</span> 5,163 automatic formulas</li>
-          <li><span class="v">✓</span> Clear project &amp; payment status</li>
-          <li><span class="v">✓</span> Live dashboard &amp; KPIs</li>
-          <li><span class="v">✓</span> Automatic tax reserve</li>
-          <li><span class="v">✓</span> 12-month cashflow forecast</li>
+          <li><span class="v">✓</span> One file. 21 linked sheets. 5,163 formulas.</li>
+          <li><span class="v">✓</span> Overdue invoices flagged automatically</li>
+          <li><span class="v">✓</span> Tax reserve calculated on every payment</li>
+          <li><span class="v">✓</span> Client profitability ranked by rate/hour</li>
+          <li><span class="v">✓</span> Minutes a week — not hours</li>
+          <li><span class="v">✓</span> 12-month cashflow forecast at a glance</li>
         </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============================= WHAT YOU GET ============================= -->
-<section class="section" id="get">
-  <div class="container container--narrow">
-    <div class="section__head reveal">
-      <span class="eyebrow eyebrow--muted">WHAT YOU GET</span>
-      <h2>Everything in One .xlsx File.</h2>
-    </div>
-
-    <div class="gets reveal">
-      <div class="get">
-        <div class="get__ic">📁</div>
-        <h3>1 × .xlsx file</h3>
-        <p>Works on Mac, Windows &amp; Google Sheets.</p>
-      </div>
-      <div class="get">
-        <div class="get__ic">📘</div>
-        <h3>Built-in tutorial sheet</h3>
-        <p>Step-by-step guide included inside the workbook.</p>
-      </div>
-      <div class="get">
-        <div class="get__ic">🔓</div>
-        <h3>No subscription, no password</h3>
-        <p>Yours forever. Buy once, use for every project.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ============================= BENEFITS ============================= -->
-<section class="section section--muted" id="benefits">
+<!-- ============================= PRICE / BIG CTA ============================= -->
+<section class="section pricing" id="price">
   <div class="container">
-    <div class="section__head reveal">
-      <span class="eyebrow eyebrow--muted">BENEFITS</span>
-      <h2>Spend Less Time Managing Your Business. More Time Doing the Work.</h2>
-    </div>
+    <div class="pricebox reveal">
+      <div class="pricebox__ribbon">👑 Flagship product · Instant download</div>
 
-    <ul class="benefits reveal">
-      <li><span class="v">✓</span> Organize your clients</li>
-      <li><span class="v">✓</span> Automate your invoicing</li>
-      <li><span class="v">✓</span> Monitor revenue in real time</li>
-      <li><span class="v">✓</span> Auto-reserve for taxes</li>
-      <li><span class="v">✓</span> Keep deadlines visible</li>
-      <li><span class="v">✓</span> Forecast 12 months of cashflow</li>
-      <li><span class="v">✓</span> Understand your business with KPIs</li>
-      <li><span class="v">✓</span> Create a more professional workflow</li>
-    </ul>
-  </div>
-</section>
+      <h2 class="h-serif pricebox__title">Here's everything you get <em>today</em>.</h2>
 
-<!-- ============================= GUMROAD CTA (pricing) ============================= -->
-<section class="section" id="buy">
-  <div class="container">
-    <div class="buy-card reveal">
-      <span class="eyebrow">VALUESHEETS</span>
-      <h2>Ready to Get Organized?</h2>
-      <p class="buy-card__desc">Take control of your freelance workflow with the complete 21-sheet Freelancer Tracker.</p>
+      <div class="pricebox__grid">
+        <ul class="pricebox__list">
+          <li><span class="chk">✓</span> <strong>21 fully-linked sheets</strong> — the complete system</li>
+          <li><span class="chk">✓</span> <strong>5,163 automatic formulas</strong> — you type, it calculates</li>
+          <li><span class="chk">✓</span> <strong>6 live charts</strong> + 5-KPI Health Scorecard</li>
+          <li><span class="chk">✓</span> <strong>Invoice Tracker</strong> (200 rows) + print-ready template</li>
+          <li><span class="chk">✓</span> <strong>Time Log</strong> (250 rows) with auto hours &amp; billable</li>
+          <li><span class="chk">✓</span> <strong>Tax Estimator</strong> — SE + Federal + State + VAT</li>
+          <li><span class="chk">✓</span> <strong>Annual P&amp;L</strong> + 12-month cashflow forecast</li>
+          <li><span class="chk">✓</span> <strong>Rate Calculator</strong> — know your minimum viable rate</li>
+          <li><span class="chk">✓</span> Works on <strong>Mac, Windows &amp; Google Sheets</strong></li>
+          <li><span class="chk">✓</span> <strong>Built-in tutorial sheet</strong> — step-by-step setup</li>
+          <li><span class="chk">✓</span> <strong>No subscription. No password. Yours forever.</strong></li>
+        </ul>
 
-      <div class="buy-card__inner">
-        <div class="buy-card__left">
-          <div class="buy-card__product">Freelancer Tracker</div>
-          <div class="buy-card__price" id="priceArea"><!-- injected --></div>
-          <ul class="buy-card__list">
-            <li><span class="v">✓</span> 21 linked sheets · 5,163 formulas</li>
-            <li><span class="v">✓</span> 6 live charts &amp; health scorecard</li>
-            <li><span class="v">✓</span> Instant .xlsx download via Gumroad</li>
-            <li><span class="v">✓</span> One-time payment · lifetime access</li>
-          </ul>
-        </div>
-        <div class="buy-card__right">
-          <a class="btn btn--primary btn--xl btn--block js-buy" href="#" target="_blank" rel="noopener">Buy Now</a>
-          <a class="buy-card__link js-buy" href="#" target="_blank" rel="noopener">View on Gumroad →</a>
-          <div class="buy-card__secure">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M12 3l8 4v5c0 5-3.5 8-8 9-4.5-1-8-4-8-9V7l8-4z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
-            Secure purchase via Gumroad
+        <div class="pricebox__buy">
+          <div class="pricebox__tag">
+            <span class="pricebox__kicker">One-time payment</span>
+            <div class="pricebox__price" id="priceArea">
+              <!-- injected from config.js -->
+            </div>
+            <span class="pricebox__sub">Instant download via Gumroad</span>
+          </div>
+
+          <a class="btn btn--buy btn--block btn--xl js-buy" href="#" target="_blank" rel="noopener">
+            <span>Buy Freelancer Tracker</span>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+
+          <a class="pricebox__link js-buy" href="#" target="_blank" rel="noopener">View on Gumroad →</a>
+
+          <div class="pricebox__trust">
+            <span>🔒 Secure checkout via Gumroad</span>
+            <span>⚡ Instant download</span>
+            <span>♾️ Lifetime access</span>
           </div>
         </div>
       </div>
@@ -731,76 +546,91 @@
   </div>
 </section>
 
+<!-- ============================= GUARANTEE / REASSURANCE ============================= -->
+<section class="section section--cream" id="guarantee">
+  <div class="container container--narrow">
+    <div class="guarantee reveal">
+      <div class="guarantee__icon">🤝</div>
+      <h2 class="h-serif">A promise, not a sales pitch.</h2>
+      <p>
+        If you open Freelancer Tracker, follow the tutorial sheet inside, and still can't picture how it fits your freelance work — that's on us.
+        <strong>Reach out through Gumroad</strong> and we'll make it right.
+      </p>
+      <p class="guarantee__fine">No subscription. No password. No upsells. Buy once, use forever.</p>
+    </div>
+  </div>
+</section>
+
 <!-- ============================= FAQ ============================= -->
-<section class="section section--muted" id="faq">
+<section class="section" id="faq">
   <div class="container container--narrow">
     <div class="section__head reveal">
-      <span class="eyebrow eyebrow--muted">FAQ</span>
-      <h2>Questions, Answered.</h2>
+      <div class="section__eyebrow">FAQ</div>
+      <h2 class="h-serif">Still thinking about it? Here's the honest truth.</h2>
     </div>
 
     <div class="faq reveal">
       <details class="faq__item">
-        <summary>What is Freelancer Tracker?<span class="faq__ic"></span></summary>
-        <div class="faq__body"><p>Freelancer Tracker is a complete 21-sheet Excel system from ValueSheets for organizing your freelance business — clients, invoicing, income, expenses, tax, time, projects, and a live dashboard — all auto-linked.</p></div>
+        <summary>What exactly am I buying?<span class="faq__ic"></span></summary>
+        <div class="faq__body"><p>One <strong>.xlsx</strong> file — a complete 21-sheet freelance business system with 5,163 auto formulas, 6 live charts, and a Health Scorecard. You download it instantly after purchase through Gumroad.</p></div>
       </details>
 
       <details class="faq__item">
-        <summary>Who is Freelancer Tracker for?<span class="faq__ic"></span></summary>
-        <div class="faq__body"><p>Freelance designers, developers, consultants, photographers, content creators, coaches — and anyone self-employed who wants a clearer system for running their business.</p></div>
+        <summary>Do I need to know Excel to use it?<span class="faq__ic"></span></summary>
+        <div class="faq__body"><p>Nope. <strong>Yellow cells = you type.</strong> <strong>Green cells = calculated for you.</strong> A built-in tutorial sheet walks you through setup. If you can fill in a form, you can run this.</p></div>
       </details>
 
       <details class="faq__item">
-        <summary>How do I purchase it?<span class="faq__ic"></span></summary>
-        <div class="faq__body"><p>Click any Buy Now button on this page. You'll be taken to the official ValueSheets product page on Gumroad to complete your purchase.</p></div>
-      </details>
-
-      <details class="faq__item">
-        <summary>Where do I buy Freelancer Tracker?<span class="faq__ic"></span></summary>
-        <div class="faq__body"><p>Freelancer Tracker is sold through the official ValueSheets Gumroad product page. Every Buy Now and "View on Gumroad" link on this site takes you there.</p></div>
-      </details>
-
-      <details class="faq__item">
-        <summary>How do I receive the product after purchasing?<span class="faq__ic"></span></summary>
-        <div class="faq__body"><p>After completing your purchase on Gumroad, you'll get instant access to download the .xlsx file from your Gumroad account.</p></div>
-      </details>
-
-      <details class="faq__item">
-        <summary>Does it work on Mac, Windows and Google Sheets?<span class="faq__ic"></span></summary>
-        <div class="faq__body"><p>Yes. The file is a standard .xlsx workbook that opens on Mac, Windows, and in Google Sheets.</p></div>
-      </details>
-
-      <details class="faq__item">
-        <summary>Can I customize the tracker?<span class="faq__ic"></span></summary>
-        <div class="faq__body"><p>Yes. Start in the Settings sheet (name, tax rates, hourly rate, annual goal, currency) — change once and all 21 sheets update. You can also adjust fields to fit your workflow.</p></div>
-      </details>
-
-      <details class="faq__item">
-        <summary>Do I need advanced Excel skills?<span class="faq__ic"></span></summary>
-        <div class="faq__body"><p>No. Yellow cells are the ones you type into; green cells are calculated for you. A built-in tutorial sheet walks you through the setup step by step.</p></div>
+        <summary>Does it work on Mac? Windows? Google Sheets?<span class="faq__ic"></span></summary>
+        <div class="faq__body"><p>All three. It's a standard .xlsx workbook — open it in Excel on Mac or Windows, or upload it to Google Sheets.</p></div>
       </details>
 
       <details class="faq__item">
         <summary>Is this a subscription?<span class="faq__ic"></span></summary>
-        <div class="faq__body"><p>No. Freelancer Tracker is a one-time purchase through Gumroad — no subscription, no password, yours forever.</p></div>
+        <div class="faq__body"><p>Absolutely not. <strong>One payment. Yours forever.</strong> No recurring charges, no login, no password.</p></div>
+      </details>
+
+      <details class="faq__item">
+        <summary>How do I actually get the file?<span class="faq__ic"></span></summary>
+        <div class="faq__body"><p>Click any Buy button → you'll land on the ValueSheets Gumroad page → complete the purchase → the .xlsx is in your inbox and Gumroad library within seconds.</p></div>
+      </details>
+
+      <details class="faq__item">
+        <summary>Can I customize it for my business?<span class="faq__ic"></span></summary>
+        <div class="faq__body"><p>Yes. Start in the Settings sheet (name, tax rates, hourly rate, goal, currency) — one change propagates to all 21 sheets. Rename or add fields anywhere else you want.</p></div>
+      </details>
+
+      <details class="faq__item">
+        <summary>I already use QuickBooks / Notion / FreshBooks. Why this?<span class="faq__ic"></span></summary>
+        <div class="faq__body"><p>Because this is <strong>one file you own</strong> — not another subscription. It opens in 2 seconds, works offline, and gives you a tax estimator + cashflow forecast most SaaS tools charge extra for.</p></div>
+      </details>
+
+      <details class="faq__item">
+        <summary>Will it work for multiple clients and projects?<span class="faq__ic"></span></summary>
+        <div class="faq__body"><p>Yes — 200 invoice rows, 250 time log rows, and an unlimited client database. Enough for years of work.</p></div>
       </details>
     </div>
   </div>
 </section>
 
-<!-- ============================= FINAL CTA ============================= -->
+<!-- ============================= FINAL HARD CTA ============================= -->
 <section class="final-cta">
   <div class="container reveal">
-    <span class="eyebrow eyebrow--light">VALUESHEETS</span>
-    <h2>Build a More Organized Freelance Business.</h2>
-    <p>Stop juggling scattered information. Start managing your freelance work with clarity.</p>
-    <div class="final-cta__buttons">
-      <a class="btn btn--primary btn--xl js-buy" href="#" target="_blank" rel="noopener">
-        Buy Now
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </a>
-    </div>
+    <h2 class="h-serif">
+      Your future self <em>will</em> wish you bought this today.
+    </h2>
+    <p>The next 12 months of your freelance business — clients, invoices, income, tax, cashflow — organized before dinner tonight.</p>
+
+    <a class="btn btn--buy btn--xl js-buy" href="#" target="_blank" rel="noopener">
+      <span>Yes — Give Me the Tracker</span>
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+
     <a class="final-cta__link js-buy" href="#" target="_blank" rel="noopener">View Freelancer Tracker on Gumroad →</a>
+
+    <div class="final-cta__trust">
+      <span>🔒 Secure checkout</span>·<span>⚡ Instant .xlsx download</span>·<span>♾️ Lifetime access</span>
+    </div>
   </div>
 </section>
 
@@ -813,43 +643,35 @@
       <a href="#top" class="brand brand--footer">
         <img src="assets/valuesheets-logo.jpg" alt="ValueSheets" class="brand__logo brand__logo--footer" />
       </a>
-      <p>Simple digital tools designed to help you organize, track, and grow your work.</p>
+      <p>Simple spreadsheet systems that help you organize, track, and grow your work.</p>
     </div>
 
     <div class="footer__col">
-      <h4>Navigation</h4>
+      <h4>The Product</h4>
       <ul>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#system">21-Sheet System</a></li>
-        <li><a href="#how">How It Works</a></li>
-        <li><a href="#preview">Product Preview</a></li>
+        <li><a href="#whats-inside">What's Inside</a></li>
+        <li><a href="#preview">Preview</a></li>
+        <li><a href="#price">Price</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><a class="js-buy" href="#" target="_blank" rel="noopener">Buy Now</a></li>
       </ul>
     </div>
 
     <div class="footer__col">
-      <h4>Product</h4>
+      <h4>Buy</h4>
       <ul>
-        <li>Freelancer Tracker</li>
-      </ul>
-    </div>
-
-    <div class="footer__col">
-      <h4>Purchase</h4>
-      <ul>
-        <li><a class="js-buy" href="#" target="_blank" rel="noopener">Buy on Gumroad</a></li>
+        <li><a class="js-buy" href="#" target="_blank" rel="noopener">Buy on Gumroad →</a></li>
       </ul>
     </div>
   </div>
   <div class="container footer__base">
-    <small>© 2026 ValueSheets. All rights reserved.</small>
+    <small>© 2026 ValueSheets · Made for freelancers who'd rather be freelancing.</small>
   </div>
 </footer>
 
 <!-- ============================= MOBILE STICKY ============================= -->
 <a class="sticky-cta js-buy" href="#" target="_blank" rel="noopener">
-  Buy Freelancer Tracker →
+  <span>Buy Freelancer Tracker</span>
+  <span class="sticky-cta__arrow">→</span>
 </a>
 
 <script src="config.js"></script>
