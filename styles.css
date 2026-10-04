@@ -697,3 +697,270 @@ p { margin: 0 0 1em; color: var(--ink-2); }
   .zoom-on-hover, .product-shot__frame { transition: none; transform: none; }
   .dot-pulse { animation: none; }
 }
+
+/* =========================================================
+   AUTHENTIC EXCEL REPLICA (hero + preview section)
+   Colors come straight from the real .xlsx file
+   ========================================================= */
+:root {
+  --xl-navy: #0D1B40;        /* title bar */
+  --xl-navy-2: #1A2E6B;      /* section headers / table headers */
+  --xl-gold: #C9A84C;        /* title gold text */
+  --xl-gold-2: #D6DCF0;      /* subtitle light-blue */
+  --xl-teal: #006064;        /* KPI tile */
+  --xl-purple: #4A148C;      /* tax KPI tile */
+  --xl-input: #FFFDE7;       /* pale yellow input */
+  --xl-input-border: #F5D547;
+  --xl-auto: #E8F5E9;        /* pale green auto */
+  --xl-auto-text: #1B5E20;
+  --xl-alt: #F4F6FA;         /* alt row */
+  --xl-grid: #D3D7E3;        /* grid lines */
+  --xl-warn: #FBE9A7;
+}
+
+.xls {
+  background: #fff;
+  border: 1px solid var(--xl-grid);
+  border-radius: 14px;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  font-family: "Inter", "Segoe UI", "Calibri", sans-serif;
+  font-size: 13px;
+  color: #0b1726;
+}
+.xls--hero { transform: rotate(-0.4deg); }
+.xls--lg { max-width: 1060px; margin: 0 auto; }
+
+.xls__chrome {
+  display: flex; align-items: center; gap: 10px;
+  padding: 8px 12px;
+  background: linear-gradient(180deg, #e9ecf0 0%, #d7dbe3 100%);
+  border-bottom: 1px solid #b4bac4;
+}
+.xls__chrome-dots { display: inline-flex; gap: 6px; }
+.xls__chrome-file {
+  margin-left: 8px;
+  font-size: 11.5px; color: #4a5668; font-weight: 500;
+}
+
+.xls__formula {
+  display: flex; align-items: center; gap: 6px;
+  padding: 5px 10px;
+  background: #f8f9fb;
+  border-bottom: 1px solid var(--xl-grid);
+  font-size: 11.5px;
+}
+.xls__cellref {
+  min-width: 40px;
+  background: #fff; border: 1px solid var(--xl-grid);
+  padding: 2px 8px; border-radius: 2px;
+  font-family: "Consolas", "Menlo", monospace;
+  color: #0b1726; font-weight: 600;
+}
+.xls__fx {
+  font-family: "Times New Roman", serif; font-style: italic;
+  color: #4a5668; padding: 0 4px;
+}
+.xls__input {
+  flex: 1;
+  background: #fff; border: 1px solid var(--xl-grid);
+  padding: 2px 10px; border-radius: 2px;
+  color: #0b1726; font-weight: 500;
+  overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+}
+
+.xls__cols {
+  display: grid; grid-template-columns: 36px repeat(10, 1fr);
+  background: #eef0f4; border-bottom: 1px solid var(--xl-grid);
+  font-size: 11px; color: #4a5668; font-weight: 600;
+}
+.xls__cols > div {
+  padding: 4px 0; text-align: center;
+  border-right: 1px solid var(--xl-grid);
+}
+.xls__cols > div:last-child { border-right: 0; }
+.xls__corner { background: #e3e6ec; }
+
+/* body = row numbers + sheet content */
+.xls__body { display: grid; grid-template-columns: 36px 1fr; min-height: 0; }
+.xls__row-nums {
+  background: #eef0f4; border-right: 1px solid var(--xl-grid);
+  font-size: 11px; color: #4a5668; font-weight: 600;
+}
+.xls__row-nums > div {
+  padding: 4px 0; text-align: center;
+  border-bottom: 1px solid var(--xl-grid);
+}
+
+.xls__sheet {
+  background: #fff;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Title bar (navy + gold) */
+.xls__title {
+  display: flex; align-items: center; gap: 10px;
+  padding: 12px 16px;
+  background: var(--xl-navy); color: var(--xl-gold);
+  font-weight: 800; font-size: 14px; letter-spacing: .04em;
+}
+.xls__title-ic { font-size: 18px; }
+.xls__title-sub {
+  margin-left: auto; color: var(--xl-gold-2); font-weight: 400; font-size: 11px;
+  letter-spacing: 0;
+}
+
+/* Section header (navy + gold) */
+.xls__section {
+  padding: 7px 16px;
+  background: var(--xl-navy-2); color: var(--xl-gold);
+  font-weight: 700; font-size: 11.5px; letter-spacing: .08em;
+}
+.xls__section--purple { background: var(--xl-purple); color: #fff; }
+
+/* KPI tile row */
+.xls__kpis {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px;
+  padding: 2px; background: var(--xl-navy);
+}
+.xls__kpi {
+  padding: 10px 12px; display: flex; flex-direction: column; gap: 2px;
+  color: #fff; text-align: left;
+}
+.xls__kpi--teal { background: var(--xl-teal); }
+.xls__kpi--purple { background: var(--xl-purple); }
+.xls__kpi small {
+  font-size: 10px; letter-spacing: .12em; font-weight: 700;
+  text-transform: uppercase; opacity: .85;
+}
+.xls__kpi strong {
+  font-size: 22px; font-weight: 800; letter-spacing: -0.01em;
+  line-height: 1;
+}
+.xls__kpi em {
+  font-style: normal; font-size: 10.5px; opacity: .78; font-weight: 500;
+}
+
+@media (max-width: 720px) {
+  .xls__kpis { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Live summary strip (Invoices) */
+.xls__summary { padding: 0 0 8px; }
+.xls__summary-head {
+  padding: 7px 16px;
+  background: var(--xl-teal); color: #fff;
+  font-weight: 700; font-size: 11.5px; letter-spacing: .08em;
+}
+.xls__summary-row {
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 2px;
+  padding: 2px; background: var(--xl-teal);
+}
+.xls__summary-row > div {
+  background: #004d50; color: #fff; padding: 10px 12px;
+  display: flex; flex-direction: column; gap: 2px;
+}
+.xls__summary-row small { font-size: 10px; letter-spacing: .1em; font-weight: 700; opacity: .85; text-transform: uppercase; }
+.xls__summary-row strong { font-size: 16px; font-weight: 800; letter-spacing: -0.01em; }
+@media (max-width: 720px) {
+  .xls__summary-row { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* Excel-style table */
+.xls__table {
+  width: 100%; border-collapse: collapse;
+  font-size: 12.5px; font-family: "Inter", "Segoe UI", "Calibri", sans-serif;
+}
+.xls__table thead th {
+  background: var(--xl-navy-2); color: #fff;
+  padding: 7px 10px; text-align: left;
+  font-weight: 700; font-size: 11px; letter-spacing: .06em;
+  border-right: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 2px solid var(--xl-navy);
+}
+.xls__table thead th:last-child { border-right: 0; }
+.xls__table thead th.is-auto-h { color: var(--xl-gold); }
+.xls__table thead th.is-num { width: 36px; text-align: center; }
+.xls__table tbody td {
+  padding: 6px 10px;
+  border-right: 1px solid var(--xl-grid);
+  border-bottom: 1px solid var(--xl-grid);
+  color: #0b1726; vertical-align: middle;
+}
+.xls__table tbody td:last-child { border-right: 0; }
+.xls__table tbody tr.is-alt td { background: var(--xl-alt); }
+.xls__table tbody td.is-num {
+  background: #eef0f4; color: #4a5668;
+  text-align: center; font-weight: 600;
+}
+.xls__table tbody td.is-input { background: var(--xl-input); }
+.xls__table tbody td.is-auto {
+  background: var(--xl-auto); color: var(--xl-auto-text); font-weight: 600;
+}
+.xls__table tbody td.is-auto.is-warn { background: var(--xl-warn); color: #7a4a00; }
+
+/* P&L specific */
+.xls__table--pnl tbody tr.is-group td {
+  background: var(--xl-navy-2); color: var(--xl-gold);
+  font-weight: 700; font-size: 11px; letter-spacing: .08em;
+  padding: 7px 10px;
+}
+.xls__table--pnl tbody tr.is-total td {
+  background: #e6ebf5; font-weight: 700;
+}
+.xls__table--pnl tbody tr.is-grand td {
+  background: var(--xl-teal); color: #fff; font-weight: 800;
+}
+.xls__table--pnl tbody tr.is-grand td.is-auto { background: var(--xl-teal); color: #fff; }
+.xls__table--pnl tbody tr.is-sep td { border-top: 2px solid var(--xl-navy-2); }
+.xls__table--pnl tbody tr.is-flag td { background: #fff5d1; font-weight: 700; }
+.xls__note { color: #4a5668; font-size: 11.5px; font-style: italic; }
+
+.xls__table--full { font-size: 12px; }
+
+/* Sheet tabs at bottom */
+.xls__tabs {
+  display: flex; align-items: center; gap: 1px;
+  background: linear-gradient(180deg, #f1f3f7 0%, #e3e6ec 100%);
+  border-top: 1px solid var(--xl-grid);
+  padding: 0 10px; overflow-x: auto;
+}
+.xls__tab {
+  padding: 8px 14px;
+  font-size: 11.5px; font-weight: 600; color: #4a5668;
+  background: transparent;
+  border-right: 1px solid var(--xl-grid);
+  cursor: pointer; white-space: nowrap;
+  transition: background .15s ease, color .15s ease;
+}
+.xls__tab:hover { background: #e9ecf0; color: #0b1726; }
+.xls__tab.is-active {
+  background: #fff; color: var(--xl-navy); font-weight: 700;
+  border-top: 2px solid var(--xl-gold);
+  margin-top: -1px;
+}
+.xls__tab--more { color: #8a94a6; font-style: italic; }
+
+/* Legend under preview */
+.xls__legend {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: 24px;
+  margin-top: 18px; font-size: .9rem; color: var(--ink-3);
+}
+.xls__legend span { display: inline-flex; align-items: center; }
+
+/* Panes */
+.xls .pane { display: none; }
+.xls .pane.is-active { display: block; animation: fade .25s ease; }
+@keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+
+/* Compact on mobile */
+@media (max-width: 640px) {
+  .xls { font-size: 11.5px; }
+  .xls__cols, .xls__row-nums { display: none; }
+  .xls__body { grid-template-columns: 1fr; }
+  .xls__kpi strong { font-size: 18px; }
+  .xls__table thead th, .xls__table tbody td { padding: 6px 8px; font-size: 11px; }
+  .xls__title { font-size: 12px; padding: 10px 12px; }
+  .xls__title-sub { display: none; }
+}

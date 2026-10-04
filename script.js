@@ -55,25 +55,46 @@
     });
   }
 
-  // Product preview tabs.
+  // Product preview tabs + bottom Excel sheet tabs (both switch panes).
   var tabs = document.querySelectorAll(".preview__tabs .tab");
+  var sheetTabs = document.querySelectorAll(".xls__tabs .xls__tab[data-tabtab]");
   var panes = document.querySelectorAll(".preview__stage .pane");
   var urlLabel = document.getElementById("previewUrl");
-  tabs.forEach(function (tab) {
-    tab.addEventListener("click", function () {
-      var key = tab.getAttribute("data-tab");
-      tabs.forEach(function (t) {
-        t.classList.toggle("is-active", t === tab);
-        t.setAttribute("aria-selected", t === tab ? "true" : "false");
-      });
-      panes.forEach(function (p) {
-        p.classList.toggle("is-active", p.getAttribute("data-pane") === key);
-      });
-      if (urlLabel && key) {
-        urlLabel.textContent = "freelancer-tracker.xlsx · " + capitalize(key);
-      }
+  var fxInput = document.querySelector("#previewFx .xls__input");
+
+  function activate(key) {
+    tabs.forEach(function (t) {
+      var on = t.getAttribute("data-tab") === key;
+      t.classList.toggle("is-active", on);
+      t.setAttribute("aria-selected", on ? "true" : "false");
     });
+    sheetTabs.forEach(function (t) {
+      t.classList.toggle("is-active", t.getAttribute("data-tabtab") === key);
+    });
+    var activePane = null;
+    panes.forEach(function (p) {
+      var on = p.getAttribute("data-pane") === key;
+      p.classList.toggle("is-active", on);
+      if (on) activePane = p;
+    });
+    if (activePane) {
+      var url = activePane.getAttribute("data-url");
+      var fx = activePane.getAttribute("data-fx");
+      if (urlLabel && url) urlLabel.textContent = "VALUESHEETS_Freelancer_v3_PREMIUM.xlsx · " + url;
+      if (fxInput && fx) fxInput.textContent = fx;
+    }
+  }
+
+  tabs.forEach(function (tab) {
+    tab.addEventListener("click", function () { activate(tab.getAttribute("data-tab")); });
   });
+  sheetTabs.forEach(function (tab) {
+    tab.addEventListener("click", function () { activate(tab.getAttribute("data-tabtab")); });
+  });
+
+  // Initialize to default active tab.
+  var initial = document.querySelector(".preview__tabs .tab.is-active");
+  if (initial) activate(initial.getAttribute("data-tab"));
 
   // Scroll reveal via IntersectionObserver.
   var revealEls = document.querySelectorAll(".reveal");
