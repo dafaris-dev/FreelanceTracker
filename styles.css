@@ -90,8 +90,12 @@ p { margin: 0 0 1em; color: var(--ink-2); }
 }
 .nav__inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .brand { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); font-weight: 700; }
-.brand__logo { height: 36px; width: auto; object-fit: contain; }
-.brand__logo--footer { height: 34px; }
+.brand__logo {
+  height: 44px; width: auto; object-fit: contain;
+  mix-blend-mode: multiply;
+}
+.brand__logo--footer { height: 60px; margin-bottom: 4px; }
+.brand--footer { display: inline-flex; margin-bottom: 4px; }
 .brand--footer p { margin: 0; }
 .nav__links { display: flex; align-items: center; gap: 26px; }
 .nav__links a { color: var(--ink-2); font-size: .95rem; font-weight: 500; transition: color .2s; }
@@ -374,6 +378,35 @@ p { margin: 0 0 1em; color: var(--ink-2); }
 
 @media (max-width: 740px) { .intro__stats { grid-template-columns: repeat(3, 1fr); } }
 @media (max-width: 480px) { .intro__stats { grid-template-columns: repeat(2, 1fr); } }
+
+/* ============================= NUMBERS THAT MATTER ============================= */
+.numbers {
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px;
+}
+@media (max-width: 1000px) { .numbers { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 640px)  { .numbers { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 440px)  { .numbers { grid-template-columns: 1fr; } }
+
+.num {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px 20px;
+  text-align: center;
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.num:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.num__big {
+  font-family: var(--serif); font-weight: 700;
+  font-size: clamp(2.4rem, 4.4vw, 3.6rem);
+  color: var(--green); letter-spacing: -0.03em; line-height: 1;
+  margin-bottom: 8px;
+}
+.num__label {
+  font-weight: 700; color: var(--ink); margin-bottom: 6px;
+  font-size: .95rem;
+}
+.num__sub { font-size: .88rem; color: var(--ink-3); line-height: 1.5; margin: 0; }
 
 /* ============================= INSIDE (WHAT'S INSIDE) ============================= */
 .inside {
