@@ -19,7 +19,7 @@
         '<span>' + escapeHtml(cfg.price) + '</span>' +
         (cfg.priceLabel ? '<span class="pricebox__price-label">' + escapeHtml(cfg.priceLabel) + '</span>' : "");
     } else {
-      priceArea.innerHTML = '<span class="pricebox__price-note">See current price on Gumroad</span>';
+      priceArea.innerHTML = '<span class="pricebox__price-note">Lihat harga terkini di Gumroad</span>';
     }
   }
 

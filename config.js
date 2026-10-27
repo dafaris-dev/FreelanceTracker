@@ -9,6 +9,6 @@ window.ValueSheetConfig = {
   // Example: "$19", "€15", "9.99"
   price: "",
 
-  // Optional label shown next to the price (e.g. "one-time payment").
-  priceLabel: "One-time payment",
+  // Optional label shown next to the price (e.g. "sekali bayar").
+  priceLabel: "Sekali bayar",
 };
